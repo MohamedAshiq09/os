@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Sender",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "sender.c",
+                "-o",
+                "sender.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Build Receiver",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "receiver.c",
+                "-o",
+                "receiver.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
